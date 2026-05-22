@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(){
 return <>
-React core Header;
-</>
+       React core Header;
+       </>
 }
 export default Header;
