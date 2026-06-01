@@ -1,12 +1,14 @@
-import useCounter from "../hooks/useCounter";
-
-export default function Counter() {
-  const { count, increment, decrement, reset } = useCounter(0);
+export default function Counter({
+  count,
+  increment,
+  decrement,
+  reset,
+}) {
+  console.log("Counter component rendered");
 
   return (
     <div>
       <h1>Counter: {count}</h1>
-
       <button onClick={increment}>+</button>
       <button onClick={decrement}>-</button>
       <button onClick={reset}>Reset</button>
